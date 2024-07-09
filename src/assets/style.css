@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #a7f3d0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    background: #030621;
+    color: #ecfdf5;
+    width: 100%;
+    padding: 20vh;
+    font-size: 20px;
+}
+
+.header {
+    /* background: #1e293b; */
+    background: linear-gradient(90deg, rgba(30,41,59,1) 0%, rgba(3,6,33,1) 50%);
+    height: 10vh;
+    padding-block: 10px;
+    padding-inline: 1.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.rl-esport-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 1vw;
+}
+
+.hero {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-infos {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    font-size: 1.125rem;
+    line-height: 2rem
+}
+
+.hero-infos h1 {
+    color: #34d399;
+    font-size: 5rem;
+}
+
+.hero-infos p {
+    margin-top: 5vh;
+}
+
+.search-matches {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    gap: 15%;
+}
+
+.search-matches p {
+    font-size: 2.55rem;
+    margin-left: 10%;
+}
+
+form {
+    width: 15%;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.form-line {
+    margin: 8px 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    background: #0f172a;
+    font-family: inherit;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #334155;
+    border-radius: 8px;
+}
+
+form input:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #475569;
+}
+
+form input::placeholder,
+form input[type=date]:invalid::-webkit-datetime-edit {
+    color: #495e7a;
+}
+
+form input[type="date"]::placeholder {
+    color: #006eff;
+}
+
+form input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.6;
+    filter: invert(0.5);
+}
+
+form input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1
+}
+
+form button {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #34d399;
+    color: #030621;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.pages {
+    display: flex;
+}
+
+.pages button {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #34d399;
+    color: #022c22;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+form button:hover,
+button:hover {
+    background-color: #a7f3d0;
+}
+
+.pages p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.matches {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.match {
+    width: 50vw;
+    background: #0f172a;
+    padding: 24px;
+    margin-block: 25px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.match:hover {
+    border: 1px solid #475569;
+    box-shadow: 0 0 10px #475569;
+}
+
+.match-infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.match .blue_name {
+    color: #7dd3fc;
+}
+
+.match .orange_name {
+    color: #fcd34d;
+}
+
+.match .date,
+.match .event {
+    color: #475569;
+    font-size: 16px;
+}
+
+.winner {
+    color: #34d399;
+}
+
+.looser {
+    color: #64748b;
+}
+
+.match-sub-infos {
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-between;
+}
+
+.footer {
+    height: 10vh;
+    padding-block: 10px;
+    padding-inline: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
